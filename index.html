@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY WEATHER APP</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body id="a">
     <div id="parent">
         <h1>Weather Explorer</h1>
-        <p id="first">stay updated with the latest weather conditions</p> <br>
-        <input type="text" placeholder="Calabar"><button>Search</button>
-        <div id="h">
-            <h2>Calabar</h2>
-            <h3>Temperature:35.09°C</h3>
-            <h3>clear sky</h3>
+        <p id="first">Stay updated with the latest weather conditions</p>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city...">
+            <button id="searchBtn">Search</button>
         </div>
+
+        <div id="h">
+            <h2 id="cityName">City Name</h2>
+            <h3 id="temp">Temperature: --°C</h3>
+            <h3 id="con">Condition</h3>
+        </div>
+
         <div class="my">
             <div class="in">
-                <h5>Saturday</h5>
-                <p>34°C</p>
+                <h5 class="day">Day 1</h5>
+                <p class="fore-temp">--°C</p>
             </div>
             <div class="in">
-                <h5>Sunday</h5>
-                <p>31°C</p>
+                <h5 class="day">Day 2</h5>
+                <p class="fore-temp">--°C</p>
             </div>
             <div class="in">
-                <h5>Monday</h5>
-                <p>31°C</p>
+                <h5 class="day">Day 3</h5>
+                <p class="fore-temp">--°C</p>
             </div>
             <div class="in">
-                <h5>Tuesday</h5>
-                <p>31°C</p>
+                <h5 class="day">Day 4</h5>
+                <p class="fore-temp">--°C</p>
             </div>
         </div>
     </div>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
